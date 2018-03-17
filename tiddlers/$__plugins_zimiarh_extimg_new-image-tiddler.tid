@@ -1,0 +1,23 @@
+created: 20180316003036184
+modified: 20180316133337690
+tags: zplugin
+title: $:/plugins/zimiarh/extimg/new-image-tiddler
+type: text/vnd.tiddlywiki
+
+<$vars varTiddler="$:/state/plugins/zimiarh/extimg/temp/variables">
+
+Name: <$edit-text tiddler=<<varTiddler>> field="name" type="text" tag="input"/>
+
+Url: <$edit-text tiddler=<<varTiddler>> field="url" type="text" tag="input"/>
+
+<$set name="name" tiddler=<<varTiddler>> field="name">
+<$set name="url" tiddler=<<varTiddler>> field="url">
+
+<$button>
+Create
+<$action-createexternalimage name=<<name>> url=<<url>>/>
+</$button>
+</$set>
+</$set>
+
+</$vars>

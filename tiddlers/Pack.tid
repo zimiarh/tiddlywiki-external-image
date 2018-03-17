@@ -1,0 +1,12 @@
+created: 20180315000910683
+modified: 20180317035921079
+tags: 
+title: Pack
+type: text/vnd.tiddlywiki
+
+<$list filter="[tag[zplugin]]"/>
+
+$tw.utils.repackPlugin(<$list filter="[tag[zplugin_main]]">"<<currentTiddler>>"</$list>, [<$list filter="[tag[zplugin]]-[tag[zplugin_main]]">
+"<<currentTiddler>>",
+</$list>
+]);

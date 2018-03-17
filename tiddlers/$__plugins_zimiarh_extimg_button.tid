@@ -1,0 +1,18 @@
+caption: {{$:/plugins/zimiarh/extimg/resources/new-image-link}} New GDrive Imge
+created: 20180315143050106
+description: Creates a new external image linking to a Goolge drive file
+modified: 20180316133321540
+tags: zplugin $:/tags/PageControls
+title: $:/plugins/zimiarh/extimg/button
+type: text/vnd.tiddlywiki
+
+<$button to="$:/plugins/zimiarh/extimg/new-image-tiddler" tooltip="Creates a new external image linking to a Goolge drive file" aria-label="New GDrive Image" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+<span class="tc-image-button">
+<$image source="$:/plugins/zimiarh/extimg/resources/new-image-link"/>
+</span>
+</$list>
+<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+<span class="tc-btn-text"><$text text="New GDrive Image"/></span>
+</$list>
+</$button>
